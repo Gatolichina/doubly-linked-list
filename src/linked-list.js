@@ -2,13 +2,14 @@ const Node = require('./node');
 
 class LinkedList {
     constructor() {
-      length=0;
+      this.length=0;
       head={};
       tail={};
+      
     }
 
     append(data) {
-      const member=new Node(data);
+      const member=new Node(data, , );
       if(length==0){
         head=member;
         tail=member;
@@ -21,10 +22,11 @@ class LinkedList {
         
       }
       length++;
+console.log('hello world!');
 
     }
 
-    head() {return this.head.data;}
+    head() {console.log('hello world!'); return this.head.data;}
 
     tail() {}
 
